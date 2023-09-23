@@ -8,7 +8,9 @@ import SingUp from './components/SingUp'
 import Dashboard from './components/Dashboard.jsx'
 import Protected from './components/Protected'
 import { AuthProvider } from './auth/AuthProvider'
+import SubirTesis from './components/SubirTesis'
 import 'bootstrap/dist/css/bootstrap.min.css';
+
 
 const router = createBrowserRouter([
   {
@@ -29,6 +31,10 @@ const router = createBrowserRouter([
 
       },
     ],
+  },
+  {
+    path:"/subirtesis",
+    element: <SubirTesis/>
   },
   
 ])
